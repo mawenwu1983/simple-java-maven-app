@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'registry.cn-beijing.aliyuncs.com/mawenwu1983/maven:3.6.1-jdk-8-alpine-aliyun'
+            image 'maven:3-alpine'
             args '-v /root/.m2:/root/.m2'
         }
     }
