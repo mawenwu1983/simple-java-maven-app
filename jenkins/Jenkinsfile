@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'registry.cn-beijing.aliyuncs.com/mawenwu1983/maven:3.6.1-jdk-8-alpine-aliyun'
-            args '-v /root/.m2:/root/.m2'
+            args '-v /root/.m2:/usr/share/maven/ref/repository'
         }
     }
     stages {
